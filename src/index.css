@@ -1,0 +1,24 @@
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+@keyframes hypeIn {
+  0% { opacity: 0; transform: translate(-50%, -100%) scale(0.95); }
+  100% { opacity: 1; transform: translate(-50%, -100%) scale(1); }
+}
+
+button:hover { filter: brightness(1.15); }
+textarea::placeholder, input::placeholder { color: #333; }
+textarea:focus, input:focus { border-color: #ff2200 !important; }
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: #080808; }
+::-webkit-scrollbar-thumb { background: #222; }
+::-webkit-scrollbar-thumb:hover { background: #ff2200; }
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #222 #080808;
+}
